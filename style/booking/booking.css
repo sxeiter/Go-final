@@ -1,0 +1,132 @@
+.booking {
+  max-width: 100%;
+  padding-top: 80px;
+
+  font-size: 24px;
+
+  background-color: #440F51;
+}
+
+.booking__title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__subtitle {
+  font-weight: 700;
+}
+
+.booking__form-wrapper {
+  max-width: 100%;
+}
+
+.booking__button-box {
+  display: flex;
+  justify-content: flex-end;
+
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.booking__button {
+  width: 300px;
+  height: 60px;
+
+  font-weight: 700;
+  font-size: 22px;
+  text-align: center;
+  line-height: 60px;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  transition-duration: 0.3s, 0.6s;
+  transition-property: background-color, outline;
+
+  border-radius: 10px;
+  background-color: #fff;
+  color: #6C0287;
+  box-shadow: 1px 1px 5px #fff, 
+              -1px -1px 5px #fff,
+              -1px 1px 5px #fff,
+              1px -1px 5px #fff;
+}
+
+.booking__button:hover {
+  background-color: #EADEED;
+  outline: 3px solid var(--main-color-two, #6C0287);
+}
+
+.booking__button:focus {
+  background-color: #EADEED;
+}
+
+.booking__button:active {
+  outline: 3px solid var(--main-color-two, #6C0287);
+}
+
+@media (max-width: 1100px) {
+  .booking__button {
+    width: 254px;
+    height: 50px;
+
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .booking {
+    padding-top: 62px;
+  }
+
+  .booking__title {
+    margin-bottom: 42px;
+
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+}
+
+@media (max-width: 767px) {
+  
+
+  .booking__button-box {    
+    justify-content: center;
+  }
+
+  .booking__button {
+    width: 280px;
+  }
+}
+
+@media (max-width: 990px) {
+  .booking__button-box {
+    max-width: 686px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding-top: 49px;
+  }
+}
+
+@media (max-width: 520px) {
+  .booking {
+    padding-top: 30px;
+  }
+
+  .booking__title {
+    margin-bottom: 13px;
+  }
+
+  .booking__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+  }  
+}
+

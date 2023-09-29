@@ -1,0 +1,161 @@
+.booking__rooms-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  max-width: 100%;
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+.booking__subtitle {
+  margin-bottom: 40px;
+  
+  text-align: center;
+}
+
+.booking__boxinput-rooms {
+  display: inline-block;
+  width: calc(25% - 46px);
+}
+
+.booking__boxinput-rooms input[type=radio] {
+  display: none;
+}
+
+.booking__boxinput-rooms label {
+  height: 55px;
+  padding-top: 7px;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  outline: 3px solid transparent;
+  border-radius: 10px;
+
+  transition-duration: 2s, 1s;
+  transition-property: background-color, outline-color;
+
+  color: #000000;
+  background-color: #fff;
+  border-radius: 10px;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.booking__boxinput-rooms label:hover {
+  background-color: #EADEED;
+  outline-color: var(--main-color-three, #640AA3);
+}
+
+.booking__boxinput-rooms label:active {
+  outline-color: var(--main-color-three, #640AA3);
+}
+
+.booking__boxinput-rooms label:focus {
+  background-color: var(--main-color-two, #6C0287);
+  outline-color: #fff;
+}
+
+@media (max-width: 1220px) {
+  .booking__boxinput-rooms label {
+    height: 44px;
+    padding: 10px;
+    
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .booking__subtitle {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 860px) {
+  .booking__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+
+
+  .booking__boxinput-rooms label {
+    height: 38px;
+    padding: 8px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    border-radius: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking__rooms-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .booking__subtitle {
+    margin-bottom: 27px;
+  }
+
+  .booking__boxinput-rooms {
+    display: inline-block;
+    width: calc(25% - 22px);
+  }
+
+  .booking__boxinput-rooms label {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-width: 610px) {
+  .booking__boxinput-rooms {
+    display: inline-block;
+    width: calc(25% - 20px);
+  }
+
+  .booking__boxinput-rooms label {
+    height: 30px;
+
+    padding: 6px 0;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 520px) {
+  .booking__rooms-wrapper {
+    gap: 14px 20px ;
+  }
+
+  .booking__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .booking__subtitle {
+    margin-bottom: 15px;
+  }
+
+  .booking__boxinput-rooms {
+    display: inline-block;
+    width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 320px) {
+  .booking__rooms-wrapper {
+    margin-bottom: 30px;
+  }
+}  
+
+

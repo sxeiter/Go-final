@@ -1,0 +1,88 @@
+.booking__games-wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+
+  margin-bottom: 60px;
+}
+
+.booking__list-title {
+  margin-bottom: 24px;
+
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.booking__item {
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.booking__input-radio,
+.booking__input-checkbox {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+
+  margin-right: 12px;
+
+  transform: translateY(5px);
+}
+
+.booking__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1050px) {
+  .booking__games-wrapper {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking__games-wrapper {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 32px 0;
+  }
+
+  .booking__games {
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .booking__games {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .booking__games-wrapper {
+    gap: 25px;
+  }
+
+  .booking__title-games {
+    margin-bottom: 15px;
+    
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .booking__list-title {
+    margin-bottom: 15px;
+
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .booking__item {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .booking__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}

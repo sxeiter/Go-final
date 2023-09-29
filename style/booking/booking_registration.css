@@ -1,0 +1,140 @@
+
+.booking__registration-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+
+  margin-bottom: 40px;
+}
+
+.registration__box-big {
+  max-width: 300px;
+  padding-top: 33px;  
+}
+
+.registration__box-datetime {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 46px;
+}
+
+.registration__input_margin_bottom {
+  margin-bottom: 14px;
+}
+
+.registration__input-date {
+  max-width: 134px;
+}
+
+.registration__input-time {
+  width: 134px;
+}
+
+.registration__box-name,
+.registration__box-contact {
+  max-width: 300px;
+}
+
+.registration__box-name > input {
+  width: 280px;
+}
+
+.registration__box-contact > input {
+  width: 300px;
+}
+
+.registration__label {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1100px) {
+  .booking__registration-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+    margin-bottom: 50px;
+  }
+
+  .registration__box-name > input {
+    width: 251px;
+  }
+
+  .registration__box-contact > input {
+    width: 254px;
+  }
+}
+
+@media (max-width: 990px) {
+  .booking__registration-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 42px 106px;
+    margin-bottom: 50px;
+  }
+
+  .registration__box-big {
+    display: flex;
+    justify-content: space-between;
+    gap: 106px;
+    min-width: 686px;
+    margin: 0 auto;
+    
+    padding-top: 0;
+  }
+  
+  .registration__box-datetime {
+    justify-content: start;
+    gap: 14px;
+    width: 280px;
+    margin-bottom: 0;
+  }
+
+  .registration__box-name > input {
+    width: 280px;
+  }
+
+  .registration__box-contact > input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking__registration-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: no-wrap;
+    gap: 35px 0;
+    margin-bottom: 50px;
+  }
+
+  .registration__box-big {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+    min-width: 280px;
+    max-width: 280px;
+    margin: 0 auto;
+    
+    padding-top: 0;
+  }
+  
+  .registration__box-datetime {
+    justify-content: start;
+    gap: 14px;
+    width: 280px;
+  }
+
+  .registration__box-name > input {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .registration__box-contact > input {
+    width: 280px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,349 @@
+.galery {
+  padding-bottom: 120px;
+}
+
+.galery__title {
+  max-width: 740px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.galery__list {
+  max-width: 1240px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px 20px;
+}
+
+.galery__item {
+  max-height: 228px;
+  transition-duration: 0.2s;
+  transition-property: transform;
+  transition-delay: 0.2s;
+
+  background-color: aqua;
+
+  position: relative;
+}
+
+.galery__img {
+  width: 100%;
+  height: 100%;
+}
+.galery__text {
+  font-weight: 700;
+  line-height: 28px;
+
+  position: absolute;
+  left: 40px;
+  bottom: 33px;
+}
+
+.galery__item:nth-child(3n - 1) {
+  transform: translateY(70px);
+}
+
+.galery__item:hover {
+  transform: scale(1.1);
+}
+
+.galery__item_stereo:hover,
+.galery__item_netfix:hover {
+  transform: translateY(70px) scale(1.1);
+}
+
+.galery__text_bottom_small {
+  width: 195px;
+  bottom: 6px;
+}
+
+.galery__text_width_netfix {
+  width: 300px;
+}
+
+.galery__item_vr {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.galery__item_stereo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.galery__item_woman {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.galery__item_magong {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.galery__item_netfix {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.galery__item_video_games {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+@media (max-width: 1024px) {
+  .galery {
+    padding-top: 52px;
+    padding-bottom: 76px;
+  }
+  
+  .galery__title {
+    max-width: 640px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  .galery__list {
+    gap: 30px 20px;
+  }
+  
+  .galery__item {
+    max-height: 172px;
+  }
+  
+  .galery__text {
+    left: 20px;
+    bottom: 30px;
+  }
+  
+  .galery__item:nth-child(3n - 1) {
+    transform: translateY(52px);
+  }
+  
+  .galery__item:hover {
+    transform: scale(1.1);
+  }
+  
+  .galery__item_trans_rot:hover {
+    transform: translateY(52px) scale(1.1);
+  }
+  
+  .galery__text_bottom_small {
+    width: 195px;
+    bottom: 5px;
+  }
+
+  .galery__text_stereo {
+    bottom: 1px;
+  }
+  
+  .galery__text_width_netfix {
+    width: 247px;
+    /* bottom: 0px; */
+  }
+  
+  .galery__item_vr {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .galery__item_stereo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .galery__item_woman {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
+  .galery__item_magong {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .galery__item_netfix {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .galery__item_video_games {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+}  
+
+@media (max-width: 1023px) {
+  .galery {
+    padding-bottom: 20px;
+  }
+
+  .galery__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px 20px;
+  }
+  
+  .galery__item {
+    max-height: 230px;
+  }
+  
+  .galery__text {
+    left: 20px;
+    bottom: 30px;
+  }
+  
+  .galery__item:nth-child(3n - 1) {
+    transform: translateY(0);
+  }
+  
+  .galery__item_trans_rot:hover {
+    transform: translateY(0);
+  }
+  
+  .galery__text_bottom_small {
+    width: 195px;
+    bottom: 5px;
+  }
+
+  .galery__text_stereo {
+    bottom: 1px;
+  }
+  
+  .galery__text_width_netfix {
+    width: 247px;
+  }
+  
+  .galery__item_vr {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  
+  .galery__item_stereo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .galery__item_woman {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+  .galery__item_magong {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  .galery__item_netfix {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+  .galery__item_video_games {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+} 
+
+@media (max-width: 768px) {
+  .galery__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .galery {
+    padding-top: 30px;
+  }
+  
+  .galery__title {
+    max-width: 440px;
+    margin-bottom: 32px;
+    line-height: 36px;
+  }
+  
+  .galery__list {
+    gap: 20px;
+  }
+  
+  .galery__item {
+    max-height: 200px;
+  }
+  
+  .galery__text {
+    left: 30px;
+    bottom: 40px;
+  }
+
+  .galery__text_stereo {
+    bottom: 12px;
+  }
+  
+  .galery__text_width_netfix {
+    width: 274px;
+    bottom: 12px;
+  }
+}
+
+@media (max-width: 710px) {
+  .galery__title {
+    width: 450px;
+  }
+
+  .galery__text_width_netfix {
+    width: 217px;
+  }
+}
+
+@media (max-width: 520px) {
+  .galery {
+    padding-top: 20px;
+  }
+  
+  .galery__title {
+    max-width: 250px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  
+  .galery__list {
+    gap: 10px;
+  }
+
+  .galery__item {
+    max-height: calc(33.33% -20px);
+  }
+  
+
+
+  .galery__text {
+    font-size: 10px;
+    line-height: 14px;
+    left: 10px;
+    bottom: 31px;
+  }
+
+  .galery__text_stereo {
+    width: 105px;
+    bottom: 17px;
+  }
+
+  .galery__text_width_netfix {
+    width: 115px;
+    bottom: 2px;
+  }
+}
+
+@media (max-width: 450px) {
+  .galery {
+    padding-bottom: 15px;
+  }
+
+  .galery__item {
+    height: 75px;
+  }
+
+  .galery__text-woman {
+    width: 110px;
+    height: 28px;
+
+    bottom: 17px;
+  }
+}
