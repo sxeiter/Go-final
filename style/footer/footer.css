@@ -6,7 +6,6 @@
 
 .footer__title {
   margin-bottom: 40px;
-
   font-size: 40px;
   font-weight: 700;
   line-height: 50px;
@@ -18,102 +17,21 @@
   display: flex;
   justify-content: space-between;
   gap: 60px;
-
   margin-bottom: 156px;
 }
 
 .contact__list {
   display: flex;
   flex-direction: column;
-
   font-size: 24px;
   line-height: 28px;
 }
 
-.contact__item_location {
-  margin-bottom: 39px;
-}
-
-.contact__item_contact {
-  margin-bottom: 35px;
-}
-
-.contact__city {
-  width: 250px;
-}
-
-.contact__city:before {
-  content: "";
-  display: inline-block;
-
-  width: 32px;
-  height: 32px;
-  margin-right: 28px;
-
-  background-image: url(../../image/footer/contact/location.svg);
-
+.contact__item {
+  text-decoration: none;
   position: relative;
-  top: 20px;
-}
-
-.contact__city-padding {
-  display: block;
-
-  padding-left: 60px;
-}
-
-.contact__tel {
-  margin-bottom: 14px;
-}
-
-.contact__tel:before {
-  content: "";
-  display: inline-block;
-
-  width: 32px;
-  height: 32px;
-  margin-right: 28px;
-
-  background-image: url(../../image/footer/contact/tel.svg);
-  position: relative;
-
-  top: 8px;
-}
-
-.contact__tel-link {
-  transition-duration: 1s;
-  transition-property: color;
-}
-
-.contact__tel-link:hover {
-  color: var(--main-color, #cd06ff);
-}
-
-.contact__email-link {
-  transition-duration: 0.6s;
-  transition-property: color;
-}
-
-.contact__email-link:hover {
-  color: var(--main-color, #cd06ff);
-}
-
-.contact__email:before {
-  content: "";
-  display: inline-block;
-
-  width: 32px;
-  height: 32px;
-  margin-right: 28px;
-
-  background-image: url(../../image/footer/contact/email.svg);
-
-  position: relative;
-  top: 8px;
-}
-
-.contact__social-list {
-  display: flex;
+  max-width: 370px;
+  padding-left: 65px;
 }
 
 .contact__social-item:not(:last-child) {
@@ -131,41 +49,119 @@
   transition-property: fill;
 }
 
-.contact__social-link:hover > svg {
-  fill: #eadeed;
+.location::before {
+  content: url(../../image/footer/contact/location.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.phone::before {
+  content: url(../../image/footer/contact/tel.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mail::before {
+  content: url(../../image/footer/contact/email.svg);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.contact__social-link:active > svg {
-  fill: var(--main-color, #cd06ff);
+.contacts {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
 }
 
-.contact__social-link:focus > svg {
-  border: 1px solid var(--main-color, #cd06ff);
+.contacts__list {
+  text-decoration: none;
+  margin-bottom: 40px;
 }
 
-.footer__image {
+.contacts__item {
+  text-decoration: none;
+  position: relative;
+  max-width: 370px;
+  padding-left: 65px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.contacts__links {
+  line-height: 38px;
+}
+
+.footer__social-item {
+  display: inline-block;
+}
+
+.footer__social-link {
+  width: 50px;
+  height: 50px;
+}
+.footer__social-item:not(:last-child) {
+  margin-right: 27px;
+}
+
+.footer__social-link:hover > svg {
+  transition-duration: 0.7s;
+  transition-property: fill;
+}
+
+.contacts__location {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contacts__location_street {
+  padding-left: 91px;
+}
+
+.map {
   max-width: 680px;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-bottom: 156px;
 }
 
 .footer__bottom {
   display: flex;
   justify-content: space-between;
-
   font-size: 14px;
   line-height: 16px;
 }
 
-.footer__bottom-right {
-  width: 157px;
+.footer__social-link:hover > svg {
+  fill: #eadeed;
 }
 
-.footer__bottom-right-link {
-  transition-duration: 0.6s;
+.footer__social-link:focus > svg {
+  fill: #eadeed;
+  outline: 1px solid var(--main-color);
+}
+
+.footer__social-link:active > svg {
+  fill: var(--main-color);
+}
+
+.contacts__link {
+  transition-duration: 0.5s;
   transition-property: color;
 }
 
-.footer__bottom-right-link:hover {
-  color: var(--main-color, #cd06ff);
+.contacts__link:hover {
+  color: var(--main-color);
 }
 
 @media (max-width: 1024px) {
@@ -195,7 +191,7 @@
     line-height: 36px;
   }
 
-  .contact__list {
+  .contacts__list {
     display: flex;
     flex-direction: column;
   }
@@ -220,7 +216,7 @@
     line-height: 18px;
   }
 
-  .contact__list {
+  .contacts__list {
     font-size: 14px;
     line-height: 18px;
   }
