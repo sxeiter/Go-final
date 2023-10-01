@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/image/icon.svg" />
     <title>Go</title>
 
     <link rel="stylesheet" href="style/global/import.css" />
@@ -37,7 +38,9 @@
           <button class="header__button-top">Заказать звонок</button>
         </div>
       </section>
+    </header>
 
+    <main class="main">
       <section class="header__content">
         <div class="container">
           <div class="header__content-background">
@@ -45,22 +48,14 @@
             <p class="header__content-subtitle">Новый формат игр и отдыха</p>
 
             <div class="header__content-row">
-              <ul class="header__content-list header__content-list-left">
-                <li class="header__content-list-left-item">
-                  <p class="header__content-list-left-title">4</p>
-                </li>
-                <li class="header__content-list-left-item">
-                  <p class="header__content-list-text">Тематических зала</p>
-                </li>
-              </ul>
-              <ul class="header__content-list header__content-list-right">
-                <li class="header__content-list-right-item">
-                  <p class="header__content-list-right-title">new</p>
-                </li>
-                <li class="header__content-list-right-item">
-                  <p class="header__content-list-text">Новейшая аппаратура</p>
-                </li>
-              </ul>
+              <div class="header__column--one">
+                <p class="header__content-list-left-title">4</p>
+                <p class="header__content-list-text">Тематических зала</p>
+              </div>
+              <div class="header__column--two">
+                <p class="header__content-list-right-title">New</p>
+                <p class="header__content-list-text">Новейшая аппаратура</p>
+              </div>
             </div>
 
             <button class="header__content-button">Забронировать</button>
@@ -72,9 +67,6 @@
           </div>
         </div>
       </section>
-    </header>
-
-    <main class="main">
       <section class="main__section galery" id="galery">
         <div class="container">
           <h2 class="galery__title">
@@ -146,64 +138,20 @@
           <h2 class="rooms__title">наши залы</h2>
 
           <ul class="rooms__list">
-            <li class="rooms__item rooms__item_vibes">
-              <a href="vibes.html" class="rooms__link">
-                <figure class="rooms__figure-img">
-                  <img
-                    class="rooms__img"
-                    src="image/rooms/wives_01.jpg"
-                    alt=""
-                  />
-                  <figcaption class="rooms__box-text">
-                    <p class="rooms__text">80’s vibes</p>
-                  </figcaption>
-                </figure>
-              </a>
+            <li class="rooms__item rooms__item-vibes">
+              <a href="vibes.html" class="rooms__link"> 80’s vibes </a>
             </li>
 
-            <li class="rooms__item rooms__item_wars">
-              <a href="wars.html" class="rooms__link">
-                <figure class="rooms__figure-img">
-                  <img
-                    class="rooms__img"
-                    src="image/rooms/wars_02.jpg"
-                    alt=""
-                  />
-                  <figcaption class="rooms__box-text">
-                    <p class="rooms__text rooms__text_translate_x">Star wars</p>
-                  </figcaption>
-                </figure>
-              </a>
+            <li class="rooms__item rooms__item-wars">
+              <a href="wars.html" class="rooms__link"> Star wars </a>
             </li>
 
-            <li class="rooms__item rooms__item_west">
-              <a href="west.html" class="rooms__link">
-                <figure class="rooms__figure-img">
-                  <img
-                    class="rooms__img"
-                    src="image/rooms/west_03.jpg"
-                    alt=""
-                  />
-                  <figcaption class="rooms__box-text">
-                    <p class="rooms__text">wild west</p>
-                  </figcaption>
-                </figure>
-              </a>
+            <li class="rooms__item rooms__item-west">
+              <a href="west.html" class="rooms__link"> wild west </a>
             </li>
 
-            <li class="rooms__item rooms__item_neon">
-              <a href="neon.html" class="rooms__link">
-                <figure class="rooms__figure-img">
-                  <img
-                    class="rooms__img"
-                    src="image/rooms/neon_04.jpg"
-                    alt=""
-                  />
-                  <figcaption class="rooms__box-text">
-                    <p class="rooms__text">neon style</p>
-                  </figcaption>
-                </figure>
-              </a>
+            <li class="rooms__item rooms__item-neon">
+              <a href="neon.html" class="rooms__link"> neon style </a>
             </li>
           </ul>
         </div>
@@ -406,12 +354,14 @@
                     class="registration__input registration__input-date"
                     type="date"
                     name="date"
+                    placeholder="Дата"
                   />
 
                   <input
                     class="registration__input registration__input-time"
                     type="time"
                     name="time"
+                    placeholder="Время"
                   />
                 </div>
                 <input

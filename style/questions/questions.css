@@ -13,7 +13,7 @@
   font-weight: 700;
   line-height: 28px;
 
-  color: #1C1A1A;
+  color: #1c1a1a;
 }
 
 .questions__item {
@@ -21,14 +21,18 @@
   padding: 0 70px;
 }
 
+.questions__item:last-child {
+  margin-bottom: 0;
+}
+
 .questions__item:nth-child(odd) {
-  background-color: #FFFFFF;
-  color: #1C1A1A;
+  background-color: #ffffff;
+  color: #1c1a1a;
 }
 
 .questions__item:nth-child(even) {
-  background-color: #440F51;
-  color: #FFFFFF;
+  background-color: #440f51;
+  color: #ffffff;
 }
 
 .questions__btn {
@@ -88,29 +92,29 @@
     font-size: 20px;
     line-height: 24px;
   }
-  
+
   .questions__item {
     margin-bottom: 16px;
     padding: 0 20px 0 20px;
   }
-  
+
   .questions__item:nth-child(even) {
-    background-color: #FFFFFF;
-    color: #1C1A1A;;
+    background-color: #ffffff;
+    color: #1c1a1a;
   }
-  
+
   .questions__btn {
     min-height: 70px;
   }
-  
+
   .questions__btn_white {
     background-image: url(../../image/questions/open_violet.svg);
   }
-  
+
   .questions__btn_white:hover {
     background-image: url(../../image/questions/hover_violet.svg);
   }
-  
+
   .questions__btn_white:active {
     background-image: url(../../image/questions/active_violet.svg);
   }
@@ -121,7 +125,7 @@
     font-size: 18px;
     line-height: 24px;
   }
-  
+
   .questions__item {
     padding: 0 65px 0 54px;
   }

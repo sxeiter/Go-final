@@ -1,16 +1,17 @@
-
 .booking__registration-wrapper {
   display: flex;
   justify-content: center;
   gap: 50px;
-
-
   margin-bottom: 40px;
+}
+
+input {
+  height: 52px;
 }
 
 .registration__box-big {
   max-width: 300px;
-  padding-top: 33px;  
+  padding-top: 33px;
 }
 
 .registration__box-datetime {
@@ -80,10 +81,10 @@
     gap: 106px;
     min-width: 686px;
     margin: 0 auto;
-    
+
     padding-top: 0;
   }
-  
+
   .registration__box-datetime {
     justify-content: start;
     gap: 14px;
@@ -118,10 +119,10 @@
     min-width: 280px;
     max-width: 280px;
     margin: 0 auto;
-    
+
     padding-top: 0;
   }
-  
+
   .registration__box-datetime {
     justify-content: start;
     gap: 14px;

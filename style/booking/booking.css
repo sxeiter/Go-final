@@ -1,10 +1,8 @@
 .booking {
   max-width: 100%;
   padding-top: 80px;
-
   font-size: 24px;
-
-  background-color: #440F51;
+  background-color: #440f51;
 }
 
 .booking__title {
@@ -26,7 +24,6 @@
 .booking__button-box {
   display: flex;
   justify-content: flex-end;
-
   max-width: 980px;
   margin: 0 auto;
 }
@@ -34,7 +31,6 @@
 .booking__button {
   width: 300px;
   height: 60px;
-
   font-weight: 700;
   font-size: 22px;
   text-align: center;
@@ -47,24 +43,22 @@
 
   border-radius: 10px;
   background-color: #fff;
-  color: #6C0287;
-  box-shadow: 1px 1px 5px #fff, 
-              -1px -1px 5px #fff,
-              -1px 1px 5px #fff,
-              1px -1px 5px #fff;
+  color: #6c0287;
+  box-shadow: 1px 1px 5px #fff, -1px -1px 5px #fff, -1px 1px 5px #fff,
+    1px -1px 5px #fff;
 }
 
 .booking__button:hover {
-  background-color: #EADEED;
-  outline: 3px solid var(--main-color-two, #6C0287);
+  background-color: #eadeed;
+  outline: 3px solid var(--main-color-two, #6c0287);
 }
 
 .booking__button:focus {
-  background-color: #EADEED;
+  background-color: #eadeed;
 }
 
 .booking__button:active {
-  outline: 3px solid var(--main-color-two, #6C0287);
+  outline: 3px solid var(--main-color-two, #6c0287);
 }
 
 @media (max-width: 1100px) {
@@ -88,13 +82,10 @@
     font-size: 30px;
     line-height: 40px;
   }
-  
 }
 
 @media (max-width: 767px) {
-  
-
-  .booking__button-box {    
+  .booking__button-box {
     justify-content: center;
   }
 
@@ -127,6 +118,5 @@
   .booking__subtitle {
     font-size: 14px;
     line-height: 18px;
-  }  
+  }
 }
-
