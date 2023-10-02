@@ -3,6 +3,7 @@
 @import "normalize.css";
 @import "global.css";
 @import "../header/header.css";
+@import "/style/content/content.css";
 @import "../galery/galery.css";
 @import "../rooms/rooms.css";
 @import "../booking/booking.css";
