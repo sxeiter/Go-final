@@ -165,9 +165,12 @@
   }
   .questions__btn {
     min-height: 0;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
   }
 
   .questions__btn-span {
-    max-width: 200px;
+    width: 200px;
   }
 }
