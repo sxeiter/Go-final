@@ -57,15 +57,10 @@
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
-
   background-color: transparent;
   color: inherit;
-
-  /* outline: 3px solid var(--main-color, #CD06FF); */
   border-radius: 10px;
-
-  border: 3px solid #cd06ff;
-
+  outline: 3px solid #cd06ff;
   transition-duration: 0.2s, 0.2s;
   transition-property: background-color, border;
 
@@ -208,7 +203,7 @@
 
   color: transparent;
   outline: 1px solid transparent;
-
+  z-index: 2;
   transform: translateX(-4px);
 }
 
@@ -319,7 +314,6 @@
 
     left: 46%;
     bottom: 46px;
-
     transform: translateX(1px);
   }
 }
