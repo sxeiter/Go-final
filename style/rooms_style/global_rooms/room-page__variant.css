@@ -25,16 +25,16 @@
   background-repeat: no-repeat;
 }
 
-.variant__item-vibes {
+.variant__item_theme-vibes {
   background-image: url(/image/rooms/wives_01.jpg);
 }
-.variant__item-west {
+.variant__item_theme-west {
   background-image: url(/image/rooms/west_03.jpg);
 }
-.variant__item-wars {
+.variant__item_theme-wars {
   background-image: url(/image/rooms/wars_02.jpg);
 }
-.variant__item-neon {
+.variant__item_theme-neon {
   background-image: url(/image/rooms/neon_04.jpg);
 }
 

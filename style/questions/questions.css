@@ -97,6 +97,9 @@
     margin-bottom: 16px;
     padding: 0 20px 0 20px;
   }
+  .questions__item:last-child {
+    display: none;
+  }
 
   .questions__item:nth-child(even) {
     background-color: #ffffff;
@@ -152,5 +155,19 @@
 
   .cuestions__btn-span {
     padding-right: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .questions__item {
+    height: 42px;
+    max-width: 430px;
+  }
+  .questions__btn {
+    min-height: 0;
+  }
+
+  .questions__btn-span {
+    max-width: 200px;
   }
 }

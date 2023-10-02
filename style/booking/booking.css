@@ -1,6 +1,6 @@
 .booking {
   max-width: 100%;
-  padding-top: 80px;
+
   font-size: 24px;
   background-color: #440f51;
 }
@@ -72,10 +72,6 @@
 }
 
 @media (max-width: 1024px) {
-  .booking {
-    padding-top: 62px;
-  }
-
   .booking__title {
     margin-bottom: 42px;
 
@@ -100,17 +96,7 @@
   }
 }
 
-@media (max-width: 768px) {
-  .booking {
-    padding-top: 49px;
-  }
-}
-
 @media (max-width: 520px) {
-  .booking {
-    padding-top: 30px;
-  }
-
   .booking__title {
     margin-bottom: 13px;
   }

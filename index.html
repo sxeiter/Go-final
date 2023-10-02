@@ -11,57 +11,55 @@
   </head>
   <body>
     <header class="header">
-      <section class="header__top">
-        <div class="container header__top-flex">
-          <button class="header__nav-burger"></button>
-          <a href="#" class="header__logo"></a>
+      <div class="container header__top-flex">
+        <button class="header__nav-burger"></button>
+        <a href="#" class="header__logo"></a>
 
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="#rooms">залы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#about">О нас</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#booking">Бронь</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#reviews">отзывы</a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#contact">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <button class="header__button-top">Заказать звонок</button>
-        </div>
-      </section>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#rooms">залы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#about">О нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#booking">Бронь</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#reviews">отзывы</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#contact">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__button-top">Заказать звонок</button>
+      </div>
     </header>
 
     <main class="main">
-      <section class="header__content">
+      <section class="content">
         <div class="container">
-          <div class="header__content-background">
-            <h1 class="header__content-title">Game over</h1>
-            <p class="header__content-subtitle">Новый формат игр и отдыха</p>
+          <div class="content-background">
+            <h1 class="content-title">Game over</h1>
+            <p class="content-subtitle">Новый формат игр и отдыха</p>
 
-            <div class="header__content-row">
-              <div class="header__column--one">
-                <p class="header__content-list-left-title">4</p>
-                <p class="header__content-list-text">Тематических зала</p>
+            <div class="content-row">
+              <div class="content-column-one">
+                <p class="content-list-left-title">4</p>
+                <p class="content-list-text">Тематических зала</p>
               </div>
-              <div class="header__column--two">
-                <p class="header__content-list-right-title">New</p>
-                <p class="header__content-list-text">Новейшая аппаратура</p>
+              <div class="content-column-two">
+                <p class="content-list-right-title">New</p>
+                <p class="content-list-text">Новейшая аппаратура</p>
               </div>
             </div>
 
-            <button class="header__content-button">Забронировать</button>
+            <button class="content-button">Забронировать</button>
             <a
               href="#galery"
-              class="header__content-button-push"
+              class="content-button-push"
               tabindex="9"
             ></a>
           </div>
@@ -138,30 +136,30 @@
           <h2 class="rooms__title">наши залы</h2>
 
           <ul class="rooms__list">
-            <li class="rooms__item rooms__item-vibes">
+            <li class="rooms__item rooms__item_theme-vibes">
               <a href="vibes.html" class="rooms__link"> 80’s vibes </a>
             </li>
 
-            <li class="rooms__item rooms__item-wars">
+            <li class="rooms__item rooms__item_theme-wars">
               <a href="wars.html" class="rooms__link"> Star wars </a>
             </li>
 
-            <li class="rooms__item rooms__item-west">
+            <li class="rooms__item rooms__item_theme-west">
               <a href="west.html" class="rooms__link"> wild west </a>
             </li>
 
-            <li class="rooms__item rooms__item-neon">
+            <li class="rooms__item rooms__item_theme-neon">
               <a href="neon.html" class="rooms__link"> neon style </a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="main__section booking" id="booking">
+      <section class="main__section booking" id="booking" >
         <div class="container">
           <h2 class="booking__title main__title">Забронировать зал просто</h2>
 
-          <form class="booking__form-wrapper" action="#">
+          <form class="booking__form-wrapper" action="https://jsonplaceholder.typicode.com/posts" id="my-form" method="post">
             <fieldset class="booking__rooms-wrapper">
               <legend class="booking__title-rooms booking__subtitle">
                 Выбери зал
@@ -396,39 +394,42 @@
                 <input class="registration__input" type="email" name="age" />
               </div>
             </fieldset>
+            <div class="booking__button-box">
+              <button class="booking__button" type="submit">Забронировать</button>
+            </div>
           </form>
-          <div class="booking__button-box">
-            <button class="booking__button" type="submit">Забронировать</button>
-          </div>
+         
         </div>
       </section>
 
-      <section class="main__section about" id="about">
+<section class="main__section about" id="about">
         <div class="container">
           <h2 class="main__title">о нас</h2>
-
-          <ul class="about__list">
-            <li class="about__item about__item_img">
+          
+          <div class="about__list">
+            
               <img
                 class="about__img"
                 src="image/about/galery.jpg"
                 alt="Фото с галереей развлечений"
               />
-            </li>
+          
 
-            <li class="about__item about__item_text">
-              <p class="about__text">
-                Для наших гостей мы создали концептуально новое игровое
-                пространство виртуальной реальности в центральной части города.
-              </p>
-              <p class="about__text">
-                Каждый день мы стараемся создавать для вас самую лучшую игровую
-                атмосферу и радовать Вас топовыми игровыми разработками со всего
-                мира.
-              </p>
-            </li>
+           <div class="about__box-text">
+            <p class="about__text-1">
+              Для наших гостей мы создали концептуально новое игровое
+              пространство виртуальной реальности в центральной части города.
+            </p>
+            <p class="about__text-2">
+              Каждый день мы стараемся создавать для вас самую лучшую игровую
+              атмосферу и радовать Вас топовыми игровыми разработками со всего
+              мира.
+            </p>
+           </div>
+              
+        
 
-            <li class="about__item about__item_boss">
+            
               <p class="about__text-big">
                 GAME OVER &mdash; это место незабываемых впечатлений
               </p>
@@ -442,10 +443,11 @@
                   Аркадий Абакшин, создатель игровой территории GAME OVER
                 </p>
               </div>
-            </li>
-          </ul>
+         
+          </div>
         </div>
       </section>
+
 
       <section class="main__section reviews" id="reviews">
         <div class="container">
@@ -525,31 +527,31 @@
                 class="questions__btn questions__btn_violet"
                 tabindex="29"
               >
-                <span class="questions__btn-span"
-                  >Можно ли забронировать комнату онлайн?</span
-                >
+                <p class="questions__btn-span">
+                  Можно ли забронировать комнату онлайн?
+                </p>
               </button>
             </li>
 
             <li class="questions__item questions__item_white">
               <button class="questions__btn questions__btn_white">
-                <span class="questions__btn-span"
-                  >Могут ли мне вернуть деньги за бронь?</span
-                >
+                <p class="questions__btn-span">
+                  Могут ли мне вернуть деньги за бронь?
+                </p>
               </button>
             </li>
 
             <li class="questions__item questions__item_violet">
               <button class="questions__btn questions__btn_violet">
-                <span class="questions__btn-span"
-                  >Какая комната самая популярная?</span
-                >
+                <p class="questions__btn-span"></p>
+                  Какая комната самая популярная?
+                </p>
               </button>
             </li>
 
             <li class="questions__item questions__item_white">
               <button class="questions__btn questions__btn_white">
-                <span class="questions__btn-span">Как получить VIP карту?</span>
+                <p class="questions__btn-span">Как получить VIP карту?</p>
               </button>
             </li>
 
@@ -558,9 +560,9 @@
                 class="questions__btn questions__btn_violet"
                 tabindex="33"
               >
-                <span class="questions__btn-span"
-                  >Какая комната самая популярная?</span
-                >
+                <p class="questions__btn-span">
+                  Какая комната самая популярная?
+                </p>
               </button>
             </li>
           </ul>
@@ -576,7 +578,7 @@
             <ul class="contacts__list">
               <li class="contacts__item location">
                 <p class="contacts__location">
-                  г. Москва&nbsp; ул.&nbsp;Аквамарина, 16
+                  г. Москва&nbsp; ул.&nbsp;Усачева, 29 к3
                 </p>
               </li>
               <li class="contacts__item phone">

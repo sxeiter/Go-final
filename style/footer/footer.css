@@ -166,18 +166,10 @@
   color: var(--main-color);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1000px) {
   .footer {
     padding-top: 35px;
   }
-
-  .footer__title {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-@media (max-width: 1000px) {
   .footer__title {
     font-size: 24px;
     line-height: 36px;
@@ -223,13 +215,18 @@
   }
 }
 @media (max-width: 768px) {
+  .footer__title {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
   .footer__contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    margin-bottom: 156px;
+    margin-bottom: 75px;
   }
   .contacts__list {
     display: flex;
@@ -239,14 +236,14 @@
   .location::before {
     content: url(../../image/footer/location768.svg);
     position: absolute;
-    left: 55px;
+    left: 65px;
     top: 32%;
     transform: translateY(-50%);
   }
   .phone::before {
     content: url(../../image/footer/phone768.svg);
     position: absolute;
-    left: 26px;
+    left: 40px;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -264,14 +261,20 @@
     padding-top: 15px;
   }
 
+  .footer__contact {
+    margin-bottom: 63px;
+  }
+
   .footer__title {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 15px;
   }
 
   .contacts__list {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 10px;
   }
   .contact__item {
     width: 270px;
@@ -279,13 +282,15 @@
   .contacts__item {
     padding-left: 24px;
   }
-
+  .footer__social-item:not(:last-child) {
+    margin-right: 20px;
+  }
   .footer__social-link {
     width: 30px;
     height: 30px;
   }
   .contacts__location {
-    width: 183px;
+    width: 153px;
   }
 
   .footer__bottom {
@@ -294,16 +299,18 @@
     align-content: space-around;
   }
 
+  .contacts__link {
+  }
   .location::before {
     content: url(../..//image/footer/location320.svg);
     position: absolute;
-
+    left: 40px;
     transform: translateY(-50%);
   }
   .phone::before {
     content: url(../../image/footer/phone320.svg);
     position: absolute;
-
+    left: 33px;
     transform: translateY(-50%);
   }
   .mail::before {
