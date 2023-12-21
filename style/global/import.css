@@ -2,6 +2,7 @@
 @import "fonts.css";
 @import "normalize.css";
 @import "global.css";
+@import "../modal/modal.css";
 @import "../header/header.css";
 @import "../content/content.css";
 @import "../galery/galery.css";

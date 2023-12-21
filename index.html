@@ -8,6 +8,7 @@
     <title>Go</title>
 
     <link rel="stylesheet" href="style/global/import.css" />
+    <script type="module" src="/js/main.js"></script>
   </head>
   <body>
     <header class="header">
@@ -34,11 +35,30 @@
             </li>
           </ul>
         </nav>
-        <button class="header__button-top">Заказать звонок</button>
+        <button class="header__button-top header__button-btn">
+          Заказать звонок
+        </button>
       </div>
     </header>
 
     <main class="main">
+      <section class="modal">
+        <div class="modal__overlay">
+          <form class="modal__form" action="">
+            <h2 class="modal__title">Заказать звонок</h2>
+            <label class="modal__label" for=""
+              >Имя
+              <input class="modal__input" type="text" />
+            </label>
+            <label class="modal__label" for=""
+              >Телефон
+              <input class="modal__input" type="text" />
+            </label>
+            <button class="modal__submit">Позвонить мне</button>
+            <div class="modal__close-btn"></div>
+          </form>
+        </div>
+      </section>
       <section class="content">
         <div class="container">
           <div class="content__background">
@@ -518,14 +538,19 @@
 
           <ul class="questions__list">
             <li class="questions__item questions__item_violet">
-              <button
-                class="questions__btn questions__btn_violet"
-                tabindex="29"
-              >
+              <button class="questions__btn questions__btn_violet">
                 <span class="questions__btn-span">
                   Можно ли забронировать комнату &nbsp;онлайн?
                 </span>
               </button>
+              <div class="questions__text-wrapper">
+                <p class="questions__text-descrip">
+                  Да, забронировать комнату вы можете онлайн, заполнив форму на
+                  нашем сайте. Также вы можете забронировать комнату позвонив по
+                  телефону
+                  <span class="questions__phone"> 8 (999) 958 - 48 - 38 </span>
+                </p>
+              </div>
             </li>
 
             <li class="questions__item questions__item_white">
@@ -534,6 +559,16 @@
                   Могут ли мне вернуть деньги за &nbsp;бронь?
                 </span>
               </button>
+              <div class="questions__text-wrapper">
+                <p
+                  class="questions__text-descrip questions__text-descrip--white"
+                >
+                  Да, забронировать комнату вы можете онлайн, заполнив форму на
+                  нашем сайте. Также вы можете забронировать комнату позвонив по
+                  телефону
+                  <span class="questions__phone"> 8 (999) 958 - 48 - 38 </span>
+                </p>
+              </div>
             </li>
 
             <li class="questions__item questions__item_violet">
@@ -542,12 +577,30 @@
                   >Какая комната самая популярная?</span
                 >
               </button>
+              <div class="questions__text-wrapper">
+                <p
+                  class="questions__text-descrip questions__text-descrip--violet"
+                >
+                  Да, забронировать комнату вы можете онлайн, заполнив форму на
+                  нашем сайте. Также вы можете забронировать комнату позвонив по
+                  телефону
+                  <span class="questions__phone"> 8 (999) 958 - 48 - 38 </span>
+                </p>
+              </div>
             </li>
 
             <li class="questions__item questions__item_white">
               <button class="questions__btn questions__btn_white">
                 <span class="questions__btn-span">Как получить VIP карту?</span>
               </button>
+              <div class="questions__text-wrapper">
+                <p class="questions__text-descrip">
+                  Да, забронировать комнату вы можете онлайн, заполнив форму на
+                  нашем сайте. Также вы можете забронировать комнату позвонив по
+                  телефону
+                  <span class="questions__phone"> 8 (999) 958 - 48 - 38 </span>
+                </p>
+              </div>
             </li>
 
             <li class="questions__item questions__item_violet">
@@ -559,6 +612,14 @@
                   Какая комната самая популярная?
                 </span>
               </button>
+              <div class="questions__text-wrapper">
+                <p class="questions__text-descrip">
+                  Да, забронировать комнату вы можете онлайн, заполнив форму на
+                  нашем сайте. Также вы можете забронировать комнату позвонив по
+                  телефону
+                  <span class="questions__phone"> 8 (999) 958 - 48 - 38 </span>
+                </p>
+              </div>
             </li>
           </ul>
         </div>

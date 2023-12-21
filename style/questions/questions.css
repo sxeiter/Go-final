@@ -87,6 +87,27 @@
   background-repeat: no-repeat;
 }
 
+.questions__text-wrapper {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease-in-out;
+}
+
+.questions__text-descrip {
+  padding-top: 57px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 28px;
+  margin-bottom: 100px;
+  padding-left: 10px;
+  margin-right: 43px;
+}
+
+.item_active {
+  height: auto;
+  background-color: inherit;
+}
+
 @media (max-width: 1080px) {
   .questions__list {
     font-size: 20px;

@@ -26,16 +26,16 @@
 }
 
 .variant__item_theme-vibes {
-  background-image: url(../../image/rooms/wives_01.jpg);
+  background-image: url(/image/rooms/wives_01.jpg);
 }
 .variant__item_theme-west {
-  background-image: url(../../image/rooms/west_03.jpg);
+  background-image: url(/image/rooms/west_03.jpg);
 }
 .variant__item_theme-wars {
-  background-image: url(../../image/rooms/wars_02.jpg);
+  background-image: url(/image/rooms/wars_02.jpg);
 }
 .variant__item_theme-neon {
-  background-image: url(../../image/rooms/neon_04.jpg);
+  background-image: url(/image/rooms/neon_04.jpg);
 }
 
 .variant__item:nth-child(1) {
