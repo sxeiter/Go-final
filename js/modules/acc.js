@@ -10,8 +10,8 @@ textWrapper.forEach((elem) => {
   }
 });
 
-buttons.forEach((q,index) => {
-    q.addEventListener('click', () => {
+buttons.forEach((btn,index) => {
+    btn.addEventListener('click', () => {
         for (let i = 0; i < textWrapper.length; i++){
             if(i === index) {
                 textWrapper[i].classList.toggle('item_active');
