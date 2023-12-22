@@ -83,6 +83,15 @@
   background-repeat: no-repeat;
 }
 
+.questions__btn_violet-active {
+  background-image: url(../../image/questions/active_violet.svg);
+  background-repeat: no-repeat;
+}
+.questions__btn_white-active {
+  background-image: url(../../image/questions/active_white.svg);
+  background-repeat: no-repeat;
+}
+
 .questions__text-wrapper {
   height: 0;
   overflow: hidden;
