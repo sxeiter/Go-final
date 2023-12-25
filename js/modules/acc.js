@@ -23,25 +23,14 @@ buttons.forEach((btn,index) => {
                 textWrapper[i].style.height = '';
             }
         }
-        if (target.matches('.questions__btn_violet')) {
+        if (target.matches('.questions__btn')) {
             buttons.forEach(btn => {
                 if (btn === target) {
-                    btn.classList.toggle('questions__btn_violet-active');
-                    //btn.classList.toggle('questions__btn_white-active');
+                    btn.classList.toggle('questions__btn-active');
+                   // btn.classList.toggle('questions__btn-active-even');
                 } else {
-                    btn.classList.remove('questions__btn_violet-active');
-                    //btn.classList.remove('questions__btn_white-active');
-                }
-            })
-        }
-        if (target.matches('.questions__btn_white')) {
-            buttons.forEach(btn => {
-                if (btn === target) {
-                    // btn.classList.toggle('questions__btn_violet-active');
-                    btn.classList.toggle('questions__btn_white-active');
-                } else {
-                    // btn.classList.remove('questions__btn_violet-active');
-                    btn.classList.remove('questions__btn_white-active');
+                    btn.classList.remove('questions__btn-active');
+                   // btn.classList.remove('questions__btn-active-even');
                 }
             })
         }
