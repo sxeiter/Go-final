@@ -4,6 +4,7 @@
 @import "global.css";
 @import "../modal/modal.css";
 @import "../header/header.css";
+@import "../burger/burger.css";
 @import "../content/content.css";
 @import "../galery/galery.css";
 @import "../rooms/rooms.css";
